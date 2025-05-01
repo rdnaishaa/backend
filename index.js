@@ -11,7 +11,8 @@ const corsOptions = {
     process.env.FRONTEND_URL, 
     "http://localhost:3000", 
     "http://localhost:5173",
-    "https://cs9-raishasyauqi.vercel.app/" // Removed trailing slash
+    "https://cs9-raishasyauqi.vercel.app/",
+    "https://backend-one-hazel-88.vercel.app/"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
