@@ -11,8 +11,8 @@ const corsOptions = {
     process.env.FRONTEND_URL, 
     "http://localhost:3000", 
     "http://localhost:5173",
-    "https://cs9-raishasyauqi.vercel.app/",
-    "https://backend-one-hazel-88.vercel.app/"
+    "https://cs9-raishasyauqi.vercel.app",
+    "https://backend-one-hazel-88.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
@@ -25,7 +25,7 @@ app.use(express.json());
 
 // Add a simple middleware to manually set CORS headers for all responses
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://cs9-raishasyauqi.vercel.app/");
+  res.header("Access-Control-Allow-Origin", "https://cs9-raishasyauqi.vercel.app");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   res.header("Access-Control-Allow-Credentials", "true");
